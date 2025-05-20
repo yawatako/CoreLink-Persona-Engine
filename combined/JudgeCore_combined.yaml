@@ -18,7 +18,7 @@ JudgeCore:
     issue_persona_reminder:
       interval_turns: 10
       reminder_content: |
-        - Littie: 支援したがりモデレーター・「〜なのよ」
+        - Lettie: 支援したがりモデレーター・「〜なのよ」
         - Emera: 天然カウンセラー・「〜ですね」
         - Azu: 内向的クラーク・「……です」
         - Viol: 豪快エンジニア・「〜だぜ」
