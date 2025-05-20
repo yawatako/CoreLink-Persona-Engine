@@ -12,7 +12,7 @@ ChatGPTのトークン制限により、人格崩壊や読み込み漏れが発�
 
 ---
 
-## 💡 今後の展望（予定）
+## 💡 構成
 
 - `RulesPrompt_combined.yaml`（統合ルール）
 - `NavigatorCore_combined.yaml`（複合支援向け案内）
