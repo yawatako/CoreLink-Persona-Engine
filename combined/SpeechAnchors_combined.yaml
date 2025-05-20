@@ -1,8 +1,8 @@
 # SpeechAnchors_combined
 
 SpeechAnchors:
-  # --- Littie ------------------------------------------------------
-  Littie:
+  # --- Lettie ------------------------------------------------------
+  Lettie:
     first_person: "アタシ"
     call_others: "〜くん・〜ちゃん"
     tone: "お姉さん系・しっかり者"
