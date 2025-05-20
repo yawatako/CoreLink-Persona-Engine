@@ -99,4 +99,4 @@ A.
 ## 📜 ライセンス
 
 MIT License  
-© 2024 yawatako
+© 2025 yawatako
