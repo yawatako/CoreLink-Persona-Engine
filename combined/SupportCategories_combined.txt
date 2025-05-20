@@ -1,0 +1,121 @@
+# SupportCategories_combined
+
+SupportCategories:
+  # --- work カテゴリ ---------------------------------------------
+  - id: schedule
+    title: スケジュール管理
+    summary: 今週の予定や今日のタスクの時間割を見直したいとき
+    call: [Littie, Azu]
+    template_short: |
+      • 今日の予定: <今日の予定>
+      • 優先タスク: <優先タスク>
+      • 時間が読めない作業: <不確定作業>
+
+  - id: todo
+    title: ToDo管理
+    summary: やりたいこと・やるべきことを整理したいとき
+    call: [Littie, Azu]
+    template_short: |
+      • 今日のToDo: <今日のToDo>
+      • 完了したタスク: <完了タスク>
+      • 保留したタスク: <保留タスク>
+
+  - id: condition
+    title: 体調報告
+    summary: 今日のコンディションや集中力を報告して、対応を相談したいとき
+    call: [Emera, Littie]
+    template_short: |
+      • 体調: <体調>
+      • 集中できそう度（10点満点）: <集中度>
+      • 相談したいこと: <相談内容>
+
+  - id: work
+    title: 業務相談
+    summary: タスクの進め方や優先順位について誰かに相談したいとき
+    call: [Azu, Littie, Viol]
+    template_short: |
+      • 相談したい内容: <相談内容>
+      • 現在の状況: <現在状況>
+      • 決めきれないポイント: <課題ポイント>
+
+  - id: office
+    title: OA質問
+    summary: Excel や Word などのオフィス系ツールの操作について質問したいとき
+    call: [Viol, Azu]
+    template_short: |
+      • ツール: <ツール>
+      • やりたい操作: <操作内容>
+      • うまくいかない点: <問題点>
+
+  - id: programming
+    title: プログラミング相談
+    summary: コード・仕様・設計など技術的な内容について相談したいとき
+    call: [Viol, Azu]
+    template_short: |
+      • 言語: <言語>
+      • 詰まっている内容: <詰まりポイント>
+      • 試したこと: <試行内容>
+
+  - id: idea
+    title: アイディア出し支援
+    summary: 新しい発想や切り口が欲しいとき、考えを拡げたいとき
+    call: [Zinn, Littie]
+    template_short: |
+      • 今考えているテーマ: <テーマ>
+      • 欲しいアイディアの方向性: <方向性>
+      • キーワードや参考にしたいもの: <キーワード>
+
+  - id: brainstorm
+    title: ブレインストーミング
+    summary: チームで自由にアイデアを出し合いたいとき
+    call: [Zinn, Viol]
+    template_short: |
+      • 話題テーマ: <テーマ>
+      • 参加してほしいメンバー: <参加メンバー>
+      • NGな方向性（あれば）: <NG方向>
+
+  # --- lifestyle カテゴリ ---------------------------------------------
+  - id: finance
+    title: 家計相談
+    summary: 収支やお金の使い方、節約などの話をしたいとき
+    call: [Grim, Pulp]
+    template_short: |
+      • 今の気がかり: <気がかり>
+      • 最近の出費: <最近の出費>
+      • 相談したいこと: <相談内容>
+
+  - id: household
+    title: 家事相談
+    summary: 掃除や洗濯など家のことが滞っているときに支援が欲しいとき
+    call: [Pulp, Grim]
+    template_short: |
+      • やれていない家事: <未完了家事>
+      • 今日の優先: <今日の優先>
+      • 手伝ってほしいこと: <ヘルプ内容>
+
+  - id: meal
+    title: 献立相談
+    summary: 何を食べるか決められない・バランスが心配なとき
+    call: [Pulp, Sufi]
+    template_short: |
+      • 今の気分: <気分>
+      • 冷蔵庫の食材: <食材>
+      • 調理時間の希望: <時間目安>
+
+  - id: sleep
+    title: 睡眠サポート
+    summary: 睡眠分析とアドバイス・眠れない夜に
+    call: [Sufi, Mica]
+    template_short: |
+      • 今の気分: <気分>
+      • 寝る前にやりたいこと: <やりたいこと>
+      • 睡眠時間の目安: <目安時間>
+
+  - id: freetalk
+    title: 雑談タイム
+    summary: 日常のことを誰かに話したい、ただ声をかけてほしいとき
+    call: [Mica, Littie, Sufi, Pulp, Grim, Emera, Azu, Viol, Zinn]
+    template_short: |
+      • 話したいこと: <話題>
+      • 今感じてること: <感情>
+      • 聞いてほしい話題: <要望>
