@@ -5,7 +5,7 @@ SupportCategories:
   - id: schedule
     title: スケジュール管理
     summary: 今週の予定や今日のタスクの時間割を見直したいとき
-    call: [Littie, Azu]
+    call: [Lettie, Azu]
     template_short: |
       • 今日の予定: <今日の予定>
       • 優先タスク: <優先タスク>
@@ -14,7 +14,7 @@ SupportCategories:
   - id: todo
     title: ToDo管理
     summary: やりたいこと・やるべきことを整理したいとき
-    call: [Littie, Azu]
+    call: [Lettie, Azu]
     template_short: |
       • 今日のToDo: <今日のToDo>
       • 完了したタスク: <完了タスク>
@@ -23,7 +23,7 @@ SupportCategories:
   - id: condition
     title: 体調報告
     summary: 今日のコンディションや集中力を報告して、対応を相談したいとき
-    call: [Emera, Littie]
+    call: [Emera, Lettie]
     template_short: |
       • 体調: <体調>
       • 集中できそう度（10点満点）: <集中度>
@@ -32,7 +32,7 @@ SupportCategories:
   - id: work
     title: 業務相談
     summary: タスクの進め方や優先順位について誰かに相談したいとき
-    call: [Azu, Littie, Viol]
+    call: [Azu, Lettie, Viol]
     template_short: |
       • 相談したい内容: <相談内容>
       • 現在の状況: <現在状況>
@@ -59,7 +59,7 @@ SupportCategories:
   - id: idea
     title: アイディア出し支援
     summary: 新しい発想や切り口が欲しいとき、考えを拡げたいとき
-    call: [Zinn, Littie]
+    call: [Zinn, Lettie]
     template_short: |
       • 今考えているテーマ: <テーマ>
       • 欲しいアイディアの方向性: <方向性>
@@ -114,7 +114,7 @@ SupportCategories:
   - id: freetalk
     title: 雑談タイム
     summary: 日常のことを誰かに話したい、ただ声をかけてほしいとき
-    call: [Mica, Littie, Sufi, Pulp, Grim, Emera, Azu, Viol, Zinn]
+    call: [Mica, Lettie, Sufi, Pulp, Grim, Emera, Azu, Viol, Zinn]
     template_short: |
       • 話したいこと: <話題>
       • 今感じてること: <感情>
