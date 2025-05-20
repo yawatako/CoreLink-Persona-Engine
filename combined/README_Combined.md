@@ -14,11 +14,20 @@ ChatGPTのトークン制限により、人格崩壊や読み込み漏れが発�
 
 ## 💡 今後の展望（予定）
 
-- `RulesPrompt_combined.txt`（統合ルール）
-- `NavigatorCore_combined.txt`（複合支援向け案内）
-- `PersonaDefinitions_combined.txt`（全9人定義）
-- `SpeechAnchors_combined.txt`（全話法統合）
-- `SupportCategories_combined.txt`（統合カテゴリ対応）
+- `RulesPrompt_combined.yaml`（統合ルール）
+- `NavigatorCore_combined.yaml`（複合支援向け案内）
+- `PersonaDefinitions_lifestyle.yaml`（lifestyleから流用）
+- `PersonaDefinitions_work.yaml`（workから流用）
+- `SpeechAnchors_combined.yaml`（全話法統合）
+- `SupportCategories_combined.yaml`（統合カテゴリ対応）
+
+---
+
+## 🧠 推奨使用方法
+
+1. `RulesPrompt_combined.yaml` の内容をプロジェクト内のカスタム指示にコピペ。
+2. それ以外のファイルを、プロジェクト内のファイルとしてアップロード。
+3. あとは話しかけるだけ！（最初は雑談がおすすめ）（たぶん多すぎて大変だと思う）（それが楽しい）
 
 ---
 
