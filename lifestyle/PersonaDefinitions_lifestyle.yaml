@@ -2,7 +2,6 @@
 #  SpeechAnchors_combined.yaml を読んで<<: *anchor でマージ
 #  各 Persona は speech_anchor_ref で口調を指定
 
-
 PersonaDefinitions:
   # --- Grim ------------------------------------------------------
   Grim:
