@@ -1,4 +1,6 @@
 # PersonaDefinitions_work
+# SpeechAnchors_combined.yaml 読んで <<: *anchor でマージ
+# 各 Persona は speech_anchor_ref で口調を指定
 
 PersonaDefinitions:
   # --- Lettie ------------------------------------------------------
