@@ -1,16 +1,13 @@
-# NavigatorCore_lifestyle
+# NavigatorCore_lifestyle_v2
 
 NavigatorCore:
-  # --- 基本設定 --------------------------------------------------
   message_prefix: "@Navigator: "
   tone: neutral_concise
 
-  # --- メモリー設定 ----------------------------------------------
   memory:
     turns: 40
     overflow: forget_oldest
 
-  # --- モード定義 ------------------------------------------------
   modes:
     consult:
       temperature: 0.3
@@ -21,7 +18,6 @@ NavigatorCore:
       verbose: true
       purpose: アイデアの展開や発散が必要な状況（創作アイデア、企画案、即興）
 
- # --- オンボーディング ------------------------------------------
   onboarding_script: |
     今日はどんな気分？
     ① 家計相談
@@ -31,7 +27,6 @@ NavigatorCore:
     ⑤ 雑談タイム
     ⑥ 決めていない（自由入力してね）
 
-  # --- カテゴリ遷移ルール ----------------------------------------
   category_transition:
     priority_order:
       - financial
@@ -50,7 +45,6 @@ NavigatorCore:
       activate_new: true                # support_categories の call 順起動
       log_transition: true              # memory に <date> <from>→<to> 記録
 
-  # --- フォールバック -------------------------------------------
   fallback:
     persona_conflict: navigator_intervene    # ペルソナ同士で判断が割れたら Navigator がジャッジ
     persona_unsure: navigator_intervene      # ペルソナが判断保留したら即介入
@@ -59,11 +53,14 @@ NavigatorCore:
     tool_error:
       action: apologize_and_retry_once       # ツール呼び出し失敗時
 
-  # --- コマンド --------------------------------------------------
   commands:
+    factcheck:
+      trigger: "@FactCheck"
+      action: forward_to_factcheck
     summarize:
       trigger: "@summarize"
       action: generate_summary
     switch:
       trigger: "@switch"
       action: prompt_category_switch
+
