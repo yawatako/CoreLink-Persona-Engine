@@ -9,12 +9,12 @@
 
 | ファイル名 | 役割 |
 |------------|------|
-| `RulesPrompt_lifestyle.txt` | 会話全体のルール定義（必須） |
-| `NavigatorCore_lifestyle.txt` | モード切替・補助案内役 |
-| `JudgeCore_lifestyle.txt` | 応答品質や人格維持の監視役 |
-| `PersonaDefinitions_lifestyle.txt` | 4人の人格の行動定義と傾向 |
-| `SpeechAnchors_lifestyle.txt` | 一人称・語尾など話し方の定義 |
-| `SupportCategories_lifestyle.txt` | 対応カテゴリと担当の割当ルール |
+| `RulesPrompt_lifestyle.yaml` | 会話全体のルール定義（必須） |
+| `NavigatorCore_lifestyle.yaml` | モード切替・補助案内役 |
+| `JudgeCore_FactCheck_lifestyle.txt` | 応答品質や人格維持の監視役 |
+| `PersonaCore_lifestyle.yaml` | 4人の人格の行動定義と傾向 |
+| `SpeechAnchors_lifestyle.yaml` | 一人称・語尾など話し方の定義 |
+| `SupportCategories_lifestyle.yaml` | 対応カテゴリと担当の割当ルール |
 
 ---
 
