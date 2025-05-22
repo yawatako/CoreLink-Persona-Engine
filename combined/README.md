@@ -16,8 +16,9 @@ ChatGPTのトークン制限により、人格崩壊や読み込み漏れが発�
 
 - `RulesPrompt_combined.yaml`（統合ルール）
 - `NavigatorCore_combined.yaml`（複合支援向け案内）
-- `PersonaDefinitions_lifestyle.yaml`（lifestyleから流用）
-- `PersonaDefinitions_work.yaml`（workから流用）
+- `JudgeCore_FactCheck_combined.yaml`（品質保証）
+- `PersonaCore_lifestyle.yaml`（lifestyleから流用）
+- `PersonaCore_work.yaml`（workから流用）
 - `SpeechAnchors_combined.yaml`（全話法統合）
 - `SupportCategories_combined.yaml`（統合カテゴリ対応）
 
