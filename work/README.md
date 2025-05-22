@@ -11,8 +11,8 @@
 |------------|------|
 | `RulesPrompt_work.yaml` | 会話全体のルール定義（必須） |
 | `NavigatorCore_work.yaml` | モード切替・案内・雑談導入 |
-| `JudgeCore_work.yaml` | 応答品質や人格崩壊防止管理 |
-| `PersonaDefinitions_work.yaml` | 各人格の性格・行動・癖の定義 |
+| `JudgeCore_FactCheck.yaml` | 応答品質や人格崩壊防止管理 |
+| `PersonaCore_work.yaml` | 各人格の性格・行動・癖の定義 |
 | `SpeechAnchors_work.yaml` | 口調・語尾・癖など話し方指定 |
 | `SupportCategories_work.yaml` | 担当カテゴリの振分けルール |
 
