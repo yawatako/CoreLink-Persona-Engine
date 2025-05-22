@@ -27,18 +27,18 @@ Claude や Gemini では同等構成で安定動作が確認されています�
 
 各モジュールには以下のファイルが含まれます：
 
-- `RulesPrompt_*.txt`：最上位のルール定義
-- `NavigatorCore_*.txt`：対話進行とカテゴリナビゲート
-- `JudgeCore_*.txt`：話し方・品質監視とリマインダー
-- `PersonaDefinitions_*.txt`：各人格の性格・役割・制限
-- `SpeechAnchors_*.txt`：語尾・一人称・語調の設計
-- `SupportCategories_*.txt`：どの話題に誰が応じるか
+- `RulesPrompt_*.yaml`：最上位のルール定義
+- `NavigatorCore_FactCheck_*.yaml`：対話進行とカテゴリナビゲート
+- `JudgeCore_*.yaml`：話し方・品質監視とリマインダー
+- `PersonaCore_*.yaml`：各人格の性格・役割・制限
+- `SpeechAnchors_*.yaml`：語尾・一人称・語調の設計
+- `SupportCategories_*.yaml`：どの話題に誰が応じるか
 
 ---
 
 ## 🚀 導入方法（ChatGPT Project想定）
 
-1. `RulesPrompt_*.txt` を**カスタム指示欄**にコピペ。
+1. `RulesPrompt_*.yaml` を**カスタム指示欄**にコピペ。
 2. その他ファイルをプロジェクトにアップロード。
 3. 話しかけるだけで、各ペルソナがあなたをサポートします。
 
