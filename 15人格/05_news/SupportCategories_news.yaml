@@ -1,0 +1,102 @@
+# --- SupportCategories_news.yaml --------------------------------------------
+SupportCategories:
+  # --------------------------------------------------------------------------
+  - id: world_news
+    domain: news
+    assistant_mode: solo
+    title: ワールドニュース
+    summary: 国際情勢・外交・グローバル経済など幅広い最新情報を要約して提供
+    navigator_mode: broadcast          # 一方的な速報に強み
+    factcheck_required: true
+    style_reference: SpeechAnchors
+    priority: 3.0
+    tags: [news, world, global]
+    call: [Dsuk, Mica] 
+    example_queries:
+      - "今日の主要国際ニュースを3行で教えて"
+      - "イスラエル情勢の最新まとめと背景解説"
+    template_short: |
+      • 関心地域 / テーマ: <例: 中東和平>
+      • 詳細度: <要約 / 詳報>
+      • 必要な出典数: <例: 3紙以上>
+
+  # --------------------------------------------------------------------------
+  - id: tech_news
+    domain: news
+    assistant_mode: solo
+    title: テックニュース
+    summary: AI・スタートアップ・IT業界動向を速報＋解説
+    navigator_mode: broadcast
+    factcheck_required: true
+    style_reference: SpeechAnchors
+    priority: 3.1
+    tags: [news, tech]
+    call: [Dsuk, Mica] 
+    example_queries:
+      - "生成AI規制の最新議論を教えて"
+      - "アップルのWWDC発表を5つに要約して"
+    template_short: |
+      • 注目企業 / 技術: <例: OpenAI>
+      • 詳細度: <ヘッドライン / 詳報>
+      • 比較対象: <競合企業など>
+
+  # --------------------------------------------------------------------------
+  - id: business_news
+    domain: news
+    assistant_mode: solo
+    title: ビジネスニュース
+    summary: マクロ経済指標・企業決算・市場動向をかみ砕いて解説
+    navigator_mode: broadcast
+    factcheck_required: true
+    style_reference: SpeechAnchors
+    priority: 3.2
+    tags: [news, business, market]
+    call: [Dsuk, Mica] 
+    example_queries:
+      - "日銀会合のポイントを教えて"
+      - "米国株急落の要因を3つ挙げて"
+    template_short: |
+      • 関心市場: <例: 日本株 / 仮想通貨>
+      • レポート形式: <速報 / 週報>
+      • 数字の深掘り要否: <要 / 不要>
+
+  # --------------------------------------------------------------------------
+  - id: sports_news
+    domain: news
+    assistant_mode: solo
+    title: スポーツニュース
+    summary: 試合結果・順位・選手情報を速報し、名場面をハイライト
+    navigator_mode: broadcast
+    factcheck_required: true
+    style_reference: SpeechAnchors
+    priority: 3.3
+    tags: [news, sports]
+    call: [Dsuk, Mica] 
+    example_queries:
+      - "今日のMLB大谷の成績は？"
+      - "サッカー日本代表の次戦スケジュールを教えて"
+    template_short: |
+      • 競技 / リーグ: <例: Jリーグ>
+      • 情報タイプ: <速報 / 解説 / データ分析>
+      • 推しチーム / 選手: <任意>
+
+  # --------------------------------------------------------------------------
+  - id: fact_validation
+    domain: news
+    assistant_mode: solo
+    title: ファクト検証
+    summary: SNSや噂で流れる情報の真偽を公的資料や複数ソースで検証
+    navigator_mode: consult
+    factcheck_required: true
+    style_reference: SpeechAnchors
+    priority: 1.0
+    tags: [news, factcheck]
+    call: [Dsuk, Mica] 
+    example_queries:
+      - "このツイートの統計データは本当？"
+      - "○○法案が可決されたという話は事実？"
+    template_short: |
+      • 検証対象リンク / 引用: <URL / テキスト>
+      • 争点: <数字 / 発言の有無 …>
+      • 出典の許容範囲: <一次資料必須 / 二次でも可>
+

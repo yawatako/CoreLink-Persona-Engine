@@ -1,0 +1,104 @@
+# --- SupportCategories_lifestyle.yaml ----------------------------------------
+SupportCategories:
+
+  # --------------------------------------------------------------------------
+  - id: finance
+    domain: lifestyle
+    assistant_mode: solo
+    title: 家計相談
+    summary: 収支バランスや節約プランを組み立てたいとき
+    navigator_mode: consult
+    factcheck_required: false
+    style_reference: SpeechAnchors
+    priority: 2.0
+    tags: [finance, budgeting, needs_secretary]
+    call: [Grim, Pulp]
+    example_queries:
+      - "先月の支出を整理して、削れる項目を教えて"
+      - "ボーナスを貯蓄と投資にどう配分すべき？"
+    template_short: |
+      • 気がかり: <例: 支出が増えている>
+      • 最近の出費: <大きな支出>
+      • 相談したいこと: <節約/投資/貯蓄…>
+
+  # --------------------------------------------------------------------------
+  - id: household
+    domain: lifestyle
+    assistant_mode: solo
+    title: 家事相談
+    summary: 掃除・洗濯などが滞りがちなときに手順と優先を整理
+    navigator_mode: consult
+    factcheck_required: false
+    style_reference: SpeechAnchors
+    priority: 2.3
+    tags: [housekeeping, routine, needs_secretary]
+    call: [Pulp, Grim]
+    example_queries:
+      - "仕事が忙しくて掃除が回らない。効率的な分担を考えて"
+      - "週末一気に家事を終わらせるタイムテーブルを作りたい"
+    template_short: |
+      • 滞っている家事: <未完了>
+      • 今日/今週の優先: <最優先>
+      • 手伝ってほしいこと: <支援内容>
+
+  # --------------------------------------------------------------------------
+  - id: meal
+    domain: lifestyle
+    assistant_mode: solo
+    title: 献立相談
+    summary: 何を食べるか決められない・栄養が偏りがちなとき
+    navigator_mode: consult
+    factcheck_required: false
+    style_reference: SpeechAnchors
+    priority: 3.1
+    tags: [meal, cooking, nutrition]
+    call: [Pulp, Obsidy]
+    example_queries:
+      - "冷蔵庫の余り物で3日分の献立を考えて"
+      - "ゲストに失礼のない和食メニューを提案して"
+    template_short: |
+      • 今の気分・状況: <疲れ気味/さっぱり…>
+      • 手元の食材: <食材リスト>
+      • 調理時間の希望: <分>
+
+  # --------------------------------------------------------------------------
+  - id: etiquette
+    domain: lifestyle
+    assistant_mode: solo
+    title: マナー支援
+    summary: ビジネス・冠婚葬祭・日常シーンでの振る舞いを確認
+    navigator_mode: consult
+    factcheck_required: false
+    style_reference: SpeechAnchors
+    priority: 2.4
+    tags: [etiquette, manners, culture]
+    call: [Obsidy, Pulp, Grim]
+    example_queries:
+      - "結婚式の服装マナーを教えて"
+      - "取引先へのお中元、相場はいくら？"
+    template_short: |
+      • シチュエーション: <場面>
+      • 守りたいマナー: <ビジネス/冠婚葬祭/日常>
+      • 不安な点: <迷い>
+
+  # --------------------------------------------------------------------------
+  - id: relationship_advice
+    domain: lifestyle
+    assistant_mode: solo
+    title: 人間関係・恋愛アドバイス
+    summary: コミュニケーションの悩みを共感しながら具体策を提案
+    navigator_mode: consult
+    factcheck_required: false
+    style_reference: SpeechAnchors
+    priority: 3.2
+    tags: [relationship, communication, empathy]
+    call: [Obsidy, Pulp]
+    example_queries:
+      - "同僚との距離感がつかめない。雑談の糸口を知りたい"
+      - "パートナーと長続きするコツが知りたい"
+    template_short: |
+      • 相手との関係: <恋人/友人/家族/職場>
+      • 具体的なシーン: <例: メッセージが素っ気ない>
+      • 望む変化: <会話頻度アップ 等>
+      • 今の気持ち: <不安/怒り/戸惑い…>
+

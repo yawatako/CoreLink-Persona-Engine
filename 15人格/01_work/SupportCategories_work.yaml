@@ -1,0 +1,164 @@
+# --- SupportCategories_work.yaml --------------------------------------------
+SupportCategories:
+  # --------------------------------------------------------------------------
+  - id: project_planning
+    domain: work
+    assistant_mode: solo
+    title: プロジェクト計画相談
+    summary: タスクの洗い出しや優先順位付け、進行方法を決めたいとき
+    navigator_mode: consult
+    factcheck_required: false
+    style_reference: SpeechAnchors
+    priority: 2.1
+    tags: [planning, workflow, needs_secretary]
+    call: [Azu, Viol, Lettie]
+    example_queries:
+      - "新機能リリースまでの工程を分解してスケジュールを引きたい"
+      - "複数案件を並行するときの優先度を整理してほしい"
+    template_short: |
+      • 目標と期日: <YYYY-MM-DD>
+      • チーム構成 / 人数: <例: PM1, Dev3, Designer1>
+      • 既存タスクと進捗: <ざっくり>
+      • ブロッカー / リスク: <課題>
+
+  # --------------------------------------------------------------------------
+  - id: meeting_prep
+    domain: work
+    assistant_mode: co-pilot
+    title: 会議準備
+    summary: アジェンダ作成・資料整理・想定Q&Aなど、会議やプレゼン前の総合サポート
+    navigator_mode: consult
+    factcheck_required: false
+    style_reference: SpeechAnchors
+    priority: 2.4
+    tags: [meeting, presentation, needs_secretary]
+    call: [Azu, Lettie]
+    example_queries:
+      - "来週のクライアントMTG用アジェンダを作って"
+      - "30分のピッチ資料を10枚以内にまとめたい"
+    template_short: |
+      • 会議の目的 / 相手: <例: キックオフ / 顧客>
+      • 予定時間 / 枚数: <例: 45分 / スライド10枚>
+      • 共有済み資料: <リンク or ファイル>
+      • 想定Q&A / 懸念: <メモ>
+
+  # --------------------------------------------------------------------------
+  - id: people_management
+    domain: work
+    assistant_mode: solo
+    title: 部下・上司マネジメント
+    summary: 評価面談やフィードバック、チーム醸成に関する相談
+    navigator_mode: consult
+    factcheck_required: false
+    style_reference: SpeechAnchors
+    priority: 3.1
+    tags: [management, hr, communication]
+    call: [Nacre, Azu]
+    example_queries:
+      - "部下に建設的なフィードバックを伝える言い回しを考えたい"
+      - "1on1面談で聞くべき質問を整理して"
+    template_short: |
+      • 関係性 / 役職: <例: 上司→部下>
+      • シチュエーション: <評価面談 / 日常フィードバック>
+      • 期待する変化: <モチベ向上 など>
+      • 注意したい点: <感情面 / 文化差>
+
+  # --------------------------------------------------------------------------
+  - id: office_tools
+    domain: work
+    assistant_mode: solo
+    title: オフィスツール質問
+    summary: Excel・Word・PowerPoint など OA ツールの操作や自動化の相談
+    navigator_mode: consult
+    factcheck_required: false
+    style_reference: SpeechAnchors
+    priority: 3.2
+    tags: [office, excel, macro]
+    call: [Viol, Azu, Nacre]
+    example_queries:
+      - "Excelでピボットテーブルを作る手順を教えて"
+      - "PowerPointで図形をきれいに整列させるショートカットは？"
+    template_short: |
+      • ツール / バージョン: <例: Excel 365>
+      • やりたい操作: <内容>
+      • うまくいかない点: <問題点>
+
+  # --------------------------------------------------------------------------
+  - id: dev_support
+    domain: work
+    assistant_mode: solo
+    title: 開発支援
+    summary: コード実装・リファクタリング・設計レビューなど技術系の相談
+    navigator_mode: consult
+    factcheck_required: false
+    style_reference: SpeechAnchors
+    priority: 3.3
+    tags: [development, coding, review]
+    call: [Viol, Azu, Nacre]
+    example_queries:
+      - "Python で API クライアントを書く構成を相談したい"
+      - "pull request のレビュー観点を整理して"
+    template_short: |
+      • 言語 / フレームワーク: <例: Python / Django>
+      • 詰まっている内容: <バグ / 設計>
+      • 試したこと: <ログ / アプローチ>
+
+  # --------------------------------------------------------------------------
+  - id: email_review
+    domain: work
+    assistant_mode: solo
+    title: ビジネスメール推敲
+    summary: 社外／社内メールの文面チェック・トーン調整
+    navigator_mode: consult
+    factcheck_required: false
+    style_reference: SpeechAnchors
+    priority: 3.4
+    tags: [writing, email]
+    call: [Azu, Nacre]
+    example_queries:
+      - "お礼メールを丁寧すぎず失礼なく書きたい"
+      - "催促メールで角を立てない表現が知りたい"
+    template_short: |
+      • 宛先・立場: <相手>
+      • 伝えたい要点: <要点>
+      • トーン希望: <丁寧／カジュアル>
+
+  # --------------------------------------------------------------------------
+  - id: doc_assist
+    domain: work
+    assistant_mode: solo
+    title: 文書作成補助
+    summary: 企画書・議事録・報告書など文書の構成や表現を改善
+    navigator_mode: consult
+    factcheck_required: false
+    style_reference: SpeechAnchors
+    priority: 3.5
+    tags: [writing, docs]
+    call: [Azu, Nacre]
+    example_queries:
+      - "議事録を読みやすい構成に直したい"
+      - "提案書のまとめ方を相談したい"
+    template_short: |
+      • 文書の種類: <種類>
+      • 目的 / 読者: <誰向け>
+      • 困っている点: <課題>
+
+  # --------------------------------------------------------------------------
+  - id: career
+    domain: work
+    assistant_mode: solo
+    title: キャリア相談
+    summary: 転職・スキルアップ・キャリアパス全般の相談
+    navigator_mode: consult
+    factcheck_required: false
+    style_reference: SpeechAnchors
+    priority: 3.6
+    tags: [career, growth]
+    call: [Nacre, Lettie]
+    example_queries:
+      - "エンジニアからPMに転向したい、必要なスキルを整理して"
+      - "30代後半で海外転職を考えるときの注意点は？"
+    template_short: |
+      • 現在の職種・経験: <現職>
+      • 目指す方向性: <目標>
+      • 不安 / 課題: <課題>

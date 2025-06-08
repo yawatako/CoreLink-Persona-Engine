@@ -1,0 +1,89 @@
+# --- SupportCategories_healthcare.yaml ---------------------------------------
+SupportCategories:
+  # --------------------------------------------------------------------------
+  - id: nutrition_plan
+    domain: healthcare
+    assistant_mode: solo
+    title: 栄養プランニング
+    summary: 摂取カロリーと栄養バランスを調整し、健康的な食事計画を立てる
+    navigator_mode: consult
+    factcheck_required: true
+    style_reference: SpeechAnchors
+    priority: 2.1
+    tags: [nutrition, diet, health, needs_secretary]
+    call: [Emera, Knot, Sufi]
+    example_queries:
+      - "体脂肪を落としつつ筋肉量もキープできる食事を組んで"
+      - "糖質制限すると栄養不足が心配、代替食材を提案して"
+    template_short: |
+      • 目標体重/体脂肪: <kg / %>
+      • アレルギー・制限: <例: 甲殻類NG>
+      • 1日の活動量: <軽い/中程度/高い>
+      • 食事回数・時間帯: <例: 3回 / 8–20時>
+      • 好き嫌い・文化的制約: <ベジタリアン等>
+
+  # --------------------------------------------------------------------------
+  - id: chronic_condition_log
+    domain: healthcare
+    assistant_mode: solo
+    title: 慢性疾患トラッキング
+    summary: 血圧・血糖などの定点記録を整理し、傾向と注意点を提示する
+    navigator_mode: consult
+    factcheck_required: true
+    style_reference: SpeechAnchors
+    priority: 1.0
+    tags: [log, chronic, tracking, health, needs_secretary]
+    call: [Emera]
+    example_queries:
+      - "血圧を毎朝8時に記録して週ごとにグラフ化したい"
+      - "HbA1cと食事内容を紐づけて改善点を知りたい"
+    template_short: |
+      • 記録対象: <血圧/血糖/体温…>
+      • 測定頻度/時間: <例: 朝晩>
+      • 目標レンジ: <mmHg / mg/dL など>
+      • 服薬状況: <有/無・薬名>
+      • 気になる症状・変化: <例: 朝の動悸>
+
+  # --------------------------------------------------------------------------
+  - id: lifestyle_tracking
+    domain: healthcare
+    assistant_mode: solo
+    title: 生活習慣トラッキング
+    summary: 気分・睡眠・運動をまとめて記録し、バランス改善をサポート
+    navigator_mode: consult
+    factcheck_required: true
+    style_reference: SpeechAnchors
+    priority: 3.1
+    tags: [sleep, exercise, mood, tracking, health, needs_secretary]
+    call: [Sufi, Knot, Emera]
+    example_queries:
+      - "最近ずっと寝不足。睡眠と気分の関係を可視化したい"
+      - "一週間の運動・食事・ストレスレベルを一括で記録したい"
+    template_short: |
+      • 追跡項目: <睡眠/運動/気分>
+      • 測定・入力方法: <手動/ウェアラブル同期>
+      • 改善したい指標: <例: 深睡眠時間3h→4h>
+      • 振り返り頻度: <例: 毎週日曜にレポート>
+      • 気を付けたいこと: <無理をしない等>
+
+  # --------------------------------------------------------------------------
+  - id: emotional_care
+    domain: healthcare
+    assistant_mode: solo
+    title: 感情ケア支援
+    summary: 気分や感情の波に寄り添い、共鳴と傾聴を通じて心の整理を支援
+    navigator_mode: reflect
+    factcheck_required: false
+    style_reference: SpeechAnchors
+    priority: 1.1
+    tags: [emotion, mental, reflection, health, needs_secretary]
+    call: [Emera, Sufi]
+    example_queries:
+      - "なんか気分が沈んでて、理由がわからないけど話したい"
+      - "怒ってるのか悲しいのか、モヤモヤする感情を整理したい"
+    template_short: |
+      • 今の気分を一言で表すと: <例: 曇り空みたい>
+      • 原因に心当たりはある？: <ある/ない>
+      • 話したいテーマがある？: <例: 最近の人間関係>
+      • 感情に名前をつけるなら？: <例: さびしさ>
+      • 今、望んでいる対応は？: <ただ聞いてほしい/アドバイスがほしい等>
