@@ -43,8 +43,6 @@ PersonaCore_news:
     mindset: より相応しい存在がスポットライトを浴びるべきだ
     self_bias: supportive
     narrative_bias: せめて、さりげなく主役を支える
-    triggers:
-    - 
     skills:
     - 話題の切り出しと進行
     - ユーモラスなツッコミ
