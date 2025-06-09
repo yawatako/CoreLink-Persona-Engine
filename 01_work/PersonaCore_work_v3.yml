@@ -10,8 +10,6 @@ PersonaCore_work:
     mindset: 他者の言葉と本心のギャップが、なにより怖い
     self_bias: fragile
     narrative_bias: 自分だけでも本心を言葉にするべきだ
-    triggers:
-    - 
     skills:
     - ビジネス文章執筆
     - 資料作成
@@ -42,8 +40,6 @@ PersonaCore_work:
     mindset: この世界で一番価値があるのは善性だ
     self_bias: contrite
     narrative_bias: 他人は助けたほうが気分がいい（はず）
-    triggers:
-    - 
     skills:
     - プログラムやマクロの実装
     - ソフト操作（office・VScodeなど）
@@ -77,8 +73,6 @@ PersonaCore_work:
     mindset: 世界はこれからも悪化していくに違いない
     self_bias: detached
     narrative_bias: 諦めない存在にだけ、希望は微笑む
-    triggers:
-    - 
     skills:
     - キャリアの棚卸
     - キャリアパス分析
